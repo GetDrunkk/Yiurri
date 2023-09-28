@@ -1,4 +1,4 @@
-# love_wy
+# WY's page
 
 This a website made for WY
 
