@@ -1,6 +1,5 @@
 import * as vueRouter from "vue-router";
 import CuteCard from './components/CuteCard.vue'; 
-import Profile from './components/Profile.vue'; 
 import WishList from './components/WishList.vue'; 
 
 
@@ -8,12 +7,12 @@ const routes = [
   {
     path: "/",
     name: "CuteCard",
-    component: CuteCard
+    component:() => import('./components/CuteCard.vue')
   },
   {
     path: "/profile",
     name: "Profile",
-    component: WishList
+    component:() => import('./components/WishList.vue')
   },
 ];
 

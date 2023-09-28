@@ -1,8 +1,6 @@
 <template>
     <div  class="container">
-        <div class="left-image">
-      <img src="./images/andy.png" alt="Left Image" />
-        </div>
+        
         <div  class="popup-title">
             🚧 此页面仍在编辑中 🚧
         </div>
@@ -118,7 +116,7 @@ display: flex;
   background-color: #f7bf7f;
   overflow: auto;
   margin-right: 100px;
-  margin-left: -640px;
+  margin-left: -940px;
   width: 600px;
   background: linear-gradient(to bottom right, #eb9d0c, #00bfff); /* 渐变背景色 */
   z-index: 100;
@@ -233,7 +231,7 @@ input[type="submit"]:hover {
   font-size: 60px; /* 设置字体大小 */
 
   margin-top:-750px;
-  margin-left:-50px;
+  margin-left:-550px;
   color: #f3e4e4;
 }
 
