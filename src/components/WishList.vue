@@ -19,7 +19,7 @@
               v-model="text"
             />
   
-            <input type="submit" value="Add todo" />
+            <input type="submit" value="Add" />
           </form>
         </section>
       </div>

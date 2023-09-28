@@ -1,6 +1,6 @@
 # WY's page
 
-This a website made for WY
+This is a website made for WY
 
 ## Project Setup
 
