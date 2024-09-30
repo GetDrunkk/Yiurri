@@ -4,7 +4,7 @@
   <div class="heart" @click="redirectToProfile"></div>
   <div class="text"></div>
   <div class="front"></div>
-  <div class="text2" @click="showPopup(photos)">- For WY the one and only - </div>
+  <div class="text2" @click="showPopup(photos)">- For Yiurri The one and only - </div>
   <Popup ref="popup" :photos="photos" />
 </div>
   </template>
@@ -129,10 +129,11 @@ body {
 .text2 {
   position: absolute;
   top:275px;
+  left:-10px;
   color: white;
   font-family: brush script mt;
   text-align: center;
-  width:195px;
+  width:220px;
   font-size:20px;
 }
 .valentines-day:hover .heart {

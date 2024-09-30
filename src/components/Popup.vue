@@ -2,27 +2,27 @@
   <div>
     <!-- 半透明背景 -->
     <div
-      v-if="isPopupVisible"
-      class="background-overlay"
-      @click="closePopup"
-      :class="{ 'active': isPopupVisible }"
+        v-if="isPopupVisible"
+        class="background-overlay"
+        @click="closePopup"
+        :class="{ 'active': isPopupVisible }"
     ></div>
     <!-- 弹出窗口 -->
     <div v-if="isPopupVisible" class="popup">
       <div class="popup-content">
         <div  class="popup-title">
-     ↓ 就是她 ↓
-    </div>
+          ↓ 就是她 ↓
+        </div>
         <!-- 关闭按钮 -->
         <span class="close-button" @click="closePopup">×</span>
 
         <!-- 照片墙 -->
         <div class="photo-wall">
           <div
-            v-for="(photo, index) in photos"
-            :key="index"
-            class="photo"
-            :style="photoStyle(index)"
+              v-for="(photo, index) in photos"
+              :key="index"
+              class="photo"
+              :style="photoStyle(index)"
           >
             <!-- 使用 object-fit 来适应图片 -->
             <img :src="photo.url" alt="Photo" class="fit-image" />
@@ -166,37 +166,37 @@ export default {
   bottom: 20px; /* 调整关闭按钮距离底部的距离 */
   left: 0; /* 居中关闭按钮水平位置 */
   top:-5%;
- /* 自定义配置 */
- --btn-size: 48px;  /* 按钮的宽高 */
-    --btn-x-size: 4px; /* X号线条粗细 */
-    --color: #f3e4e4;     /* 颜色 */
-    /* 配置 END */
+  /* 自定义配置 */
+  --btn-size: 48px;  /* 按钮的宽高 */
+  --btn-x-size: 4px; /* X号线条粗细 */
+  --color: #f3e4e4;     /* 颜色 */
+  /* 配置 END */
 
-    position: relative;
-    width: var(--btn-size);
-    height: var(--btn-size);
+  position: relative;
+  width: var(--btn-size);
+  height: var(--btn-size);
 
-    /* X线条旋转后会有偏移，使用 flex 进行居中对齐修正 */
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+  /* X线条旋转后会有偏移，使用 flex 进行居中对齐修正 */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* 绘制X线条 */
 .close-button::after, .close-button::before {
-    content: "";
-    position: absolute;
-    width: var(--btn-x-size);
-    height: var(--btn-size);
-    background-color: var(--color);
-    border-radius: calc(var(--btn-x-size ) / 2);
+  content: "";
+  position: absolute;
+  width: var(--btn-x-size);
+  height: var(--btn-size);
+  background-color: var(--color);
+  border-radius: calc(var(--btn-x-size ) / 2);
 }
 /* 两条线条各向左右分别旋转 45 度*/
 .close-button::after {
-    transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 .close-button::before{
-    transform: rotate(-45deg) ;
+  transform: rotate(-45deg) ;
 }
 
 /* 点击行文字的样式 */
@@ -207,8 +207,8 @@ export default {
 }
 
 .fit-image {
-  max-width: 70%; /* 设置最大宽度为容器的宽度 */
-  max-height: 70%; /* 设置最大高度为容器的高度 */
+  max-width: 60%; /* 设置最大宽度为容器的宽度 */
+  max-height: 60%; /* 设置最大高度为容器的高度 */
   object-fit: contain; /* 使用 contain 保持宽高比例并适应容器 */
 }
 
