@@ -1,13 +1,13 @@
 <template>
-<div class="valentines-day" >
-  <div class="envelope" ></div>
-  <div class="heart" @click="redirectToProfile"></div>
-  <div class="text"></div>
-  <div class="front"></div>
-  <div class="text2" @click="showPopup(photos)">- For Yiurri The one and only - </div>
-  <Popup ref="popup" :photos="photos" />
-</div>
-  </template>
+  <div class="valentines-day" >
+    <div class="envelope" ></div>
+    <div class="heart" @click="redirectToProfile"></div>
+    <div class="text"></div>
+    <div class="front"></div>
+    <div class="text2" @click="showPopup(photos)">- For Yiurri The one and only - </div>
+    <Popup ref="popup" :photos="photos" />
+  </div>
+</template>
 
 <style>
 body {
@@ -61,7 +61,7 @@ body {
   filter: drop-shadow(0 -10px 25px rgba(0,0,0,.3));
   transition: .5s;
 }
-  
+
 .heart:before, .heart:after {
   content:"";
   background-color: #e01911;
@@ -70,17 +70,17 @@ body {
   width: 180px;
   position: absolute;
   z-index:10
-  }
-  
+}
+
 .heart:before {
   top:-100px;
   left:0;
   z-index:10}
-  
+
 .heart:after {
   left:100px;
   top:0;}
-  .front {
+.front {
   position: absolute;
   width:0;
   height:0;
@@ -182,7 +182,7 @@ export default {
   },
   methods: {
     redirectToProfile() {
-      this.$router.push('/profile'); 
+      this.$router.push('/profile');
     },
     showPopup(photos) {
       this.photos = photos;

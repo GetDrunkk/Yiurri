@@ -5,7 +5,7 @@ import WishList from './components/WishList.vue';
 
 const routes = [
   {
-    path: "/",
+    path: "/yiurri",
     name: "CuteCard",
     component:() => import('./components/CuteCard.vue')
   },

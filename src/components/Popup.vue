@@ -257,7 +257,7 @@ export default {
   font-family: 'Trebuchet MS'; /* 替换 'Your Cute Font' 为实际的字体名称 */
   font-size: 60px; /* 设置字体大小 */
   text-align: center; /* 文字居中对齐 */
-  margin-top: -100px; /* 调整标题距离顶部的距离 */
+  margin-top: -60px; /* 调整标题距离顶部的距离 */
   color: #f3e4e4;
 }
 
