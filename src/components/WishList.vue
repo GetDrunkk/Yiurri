@@ -12,10 +12,10 @@
       <div class="input-section">
         <section class="create-todo">
           <form @submit.prevent="addTodo">
-            <h3>写下芸宝的愿望吧🙂</h3>
+            <h3>写下优宝的愿望吧🙂</h3>
             <input
               type="text"
-              placeholder="e.g. 想去迪士尼"
+              placeholder="e.g. 想要水手服"
               v-model="text"
             />
   
